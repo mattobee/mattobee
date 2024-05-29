@@ -1,17 +1,53 @@
-<h1>Meter test cases</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meter test cases</title>
+    <style>
+      .progress {
+        display: block;
+        width: 100%;
+        height: 1em;
+        background-color: #f0f0f0;
+        border-radius: 0.5em;
+        overflow: hidden;
+      }
 
-<h2>Version 1</h2>
+      .progress-item {
+        display: block;
+        height: 100%;
+        background-color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Meter test cases</h1>
 
-<div aria-label="0 licenses used; 100 licenses purchased; 100 licenses unused" role="meter" aria-valuenow="10" aria-valuemax="100">
-    <span class="progress">
-        <span style="width: 10%;" class="progress-item"></span>
-    </span>
-</div>
+    <h2>Version 1</h2>
 
-<h2>Version 2</h2>
+    <div
+      aria-label="0 licenses used; 100 licenses purchased; 100 licenses unused"
+      role="meter"
+      aria-valuenow="10"
+      aria-valuemax="100"
+    >
+      <span class="progress">
+        <span style="width: 10%" class="progress-item"></span>
+      </span>
+    </div>
 
-<div role="meter" aria-valuenow="0" aria-valuemax="100" aria-valuetext="0 of 100 licenses used">
-    <span class="progress">
-        <span style="width: 0%;" class="progress-item"></span>
-    </span>
-</div>
+    <h2>Version 2</h2>
+
+    <div
+      role="meter"
+      aria-valuenow="0"
+      aria-valuemax="100"
+      aria-valuetext="0 of 100 licenses used"
+    >
+      <span class="progress">
+        <span style="width: 0%" class="progress-item"></span>
+      </span>
+    </div>
+  </body>
+</html>
