@@ -25,6 +25,7 @@
     <h1>Meter test cases</h1>
 
     <h2>Version 1</h2>
+    <p>A <code>div</code> with <code>role="meter"</code> and <code>aria-label</code> providing the count of licences used. The actual value set for <code>aria-valuenow</code> will be announced after the label.</p>
 
     <div
       aria-label="0 licenses used; 100 licenses purchased; 100 licenses unused"
@@ -38,6 +39,7 @@
     </div>
 
     <h2>Version 2</h2>
+    <p>A <code>div</code> with <code>role="meter"</code>. The count of licences used is provided in <code>aria-valuetext</code>, which should prevent the value of <code>aria-valuenow</code> being announced.</p>
 
     <div
       aria-label="Committers"
